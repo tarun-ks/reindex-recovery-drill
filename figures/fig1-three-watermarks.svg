@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="700" viewBox="0 0 1240 700"><rect width="1240" height="700" fill="#fcfcfb"/>
+<text x="40.0" y="52.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="25" fill="#0b0b0b" font-weight="600" text-anchor="start">Three watermarks on a commit timeline</text>
+<text x="40.0" y="80.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15.5" fill="#52514e" font-weight="400" text-anchor="start">Each watermark is read at the same instant. Only the snapshot xmin covers transactions that were still open.</text>
+<rect x="474.9" y="146" width="251.1" height="374.0" fill="#0b0b0b" opacity="0.030"/>
+<text x="860.0" y="128.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14.5" fill="#0b0b0b" font-weight="600" text-anchor="middle">timestamp</text>
+<text x="860.0" y="148.0" font-family="'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" fill="#898781" font-weight="400" text-anchor="middle">updated_at &gt; W</text>
+<text x="1000.0" y="128.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14.5" fill="#0b0b0b" font-weight="600" text-anchor="middle">MAX(seq)</text>
+<text x="1000.0" y="148.0" font-family="'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" fill="#898781" font-weight="400" text-anchor="middle">seq &gt; 52</text>
+<rect x="1070.0" y="146" width="140" height="374.0" fill="#2a78d6" opacity="0.055" rx="4"/>
+<text x="1140.0" y="128.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14.5" fill="#0b0b0b" font-weight="600" text-anchor="middle">snapshot xmin</text>
+<text x="1140.0" y="148.0" font-family="'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" fill="#898781" font-weight="400" text-anchor="middle">xact_id &gt;= xmin</text>
+<line x1="474.9" y1="146" x2="474.9" y2="520.0" stroke="#0b0b0b" stroke-width="1.8" stroke-dasharray="6 4"/>
+<text x="474.9" y="138.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#0b0b0b" font-weight="600" text-anchor="middle">watermark read (W)</text>
+<text x="40.0" y="181.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15.5" fill="#0b0b0b" font-weight="600" text-anchor="start">T1</text>
+<text x="72.0" y="181.0" font-family="'SFMono-Regular', Menlo, Consolas, monospace" font-size="12.5" fill="#898781" font-weight="400" text-anchor="start">seq 49</text>
+<line x1="212.6" y1="176" x2="335.4" y2="176" stroke="#898781" stroke-width="2.0" opacity="0.75"/>
+<circle cx="212.6" cy="176" r="4.6" fill="#fcfcfb" stroke="#898781" stroke-width="2.2" opacity="0.75"/>
+<rect x="330.8" y="171.4" width="9.2" height="9.2" rx="1.6" fill="#898781" opacity="0.75"/>
+<path d="M 854.0 175.5 L 858.0 180.0 L 866.5 170.5" fill="none" stroke="#52514e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 994.0 175.5 L 998.0 180.0 L 1006.5 170.5" fill="none" stroke="#52514e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1134.0 175.5 L 1138.0 180.0 L 1146.5 170.5" fill="none" stroke="#52514e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="40.0" y="253.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15.5" fill="#0b0b0b" font-weight="600" text-anchor="start">T2</text>
+<text x="72.0" y="253.0" font-family="'SFMono-Regular', Menlo, Consolas, monospace" font-size="12.5" fill="#898781" font-weight="400" text-anchor="start">seq 50</text>
+<line x1="279.6" y1="248" x2="569.8" y2="248" stroke="#d03b3b" stroke-width="3.0" opacity="1.0"/>
+<circle cx="279.6" cy="248" r="4.6" fill="#fcfcfb" stroke="#d03b3b" stroke-width="2.2" opacity="1.0"/>
+<rect x="565.2" y="243.4" width="9.2" height="9.2" rx="1.6" fill="#d03b3b" opacity="1.0"/>
+<rect x="798.0" y="231.0" width="124" height="34" rx="5" fill="#d03b3b" opacity="0.10"/>
+<path d="M 854.5 242.5 L 865.5 253.5 M 865.5 242.5 L 854.5 253.5" fill="none" stroke="#d03b3b" stroke-width="2.6" stroke-linecap="round"/>
+<rect x="938.0" y="231.0" width="124" height="34" rx="5" fill="#d03b3b" opacity="0.10"/>
+<path d="M 994.5 242.5 L 1005.5 253.5 M 1005.5 242.5 L 994.5 253.5" fill="none" stroke="#d03b3b" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M 1134.0 247.5 L 1138.0 252.0 L 1146.5 242.5" fill="none" stroke="#52514e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="40.0" y="325.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15.5" fill="#0b0b0b" font-weight="600" text-anchor="start">T3</text>
+<text x="72.0" y="325.0" font-family="'SFMono-Regular', Menlo, Consolas, monospace" font-size="12.5" fill="#898781" font-weight="400" text-anchor="start">seq 51</text>
+<line x1="357.7" y1="320" x2="659.0" y2="320" stroke="#d03b3b" stroke-width="3.0" opacity="1.0"/>
+<circle cx="357.7" cy="320" r="4.6" fill="#fcfcfb" stroke="#d03b3b" stroke-width="2.2" opacity="1.0"/>
+<rect x="654.4" y="315.4" width="9.2" height="9.2" rx="1.6" fill="#d03b3b" opacity="1.0"/>
+<rect x="798.0" y="303.0" width="124" height="34" rx="5" fill="#d03b3b" opacity="0.10"/>
+<path d="M 854.5 314.5 L 865.5 325.5 M 865.5 314.5 L 854.5 325.5" fill="none" stroke="#d03b3b" stroke-width="2.6" stroke-linecap="round"/>
+<rect x="938.0" y="303.0" width="124" height="34" rx="5" fill="#d03b3b" opacity="0.10"/>
+<path d="M 994.5 314.5 L 1005.5 325.5 M 1005.5 314.5 L 994.5 325.5" fill="none" stroke="#d03b3b" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M 1134.0 319.5 L 1138.0 324.0 L 1146.5 314.5" fill="none" stroke="#52514e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="40.0" y="397.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15.5" fill="#0b0b0b" font-weight="600" text-anchor="start">T4</text>
+<text x="72.0" y="397.0" font-family="'SFMono-Regular', Menlo, Consolas, monospace" font-size="12.5" fill="#898781" font-weight="400" text-anchor="start">seq 52</text>
+<line x1="402.4" y1="392" x2="447.0" y2="392" stroke="#898781" stroke-width="2.0" opacity="0.75"/>
+<circle cx="402.4" cy="392" r="4.6" fill="#fcfcfb" stroke="#898781" stroke-width="2.2" opacity="0.75"/>
+<rect x="442.4" y="387.4" width="9.2" height="9.2" rx="1.6" fill="#898781" opacity="0.75"/>
+<path d="M 854.0 391.5 L 858.0 396.0 L 866.5 386.5" fill="none" stroke="#52514e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 994.0 391.5 L 998.0 396.0 L 1006.5 386.5" fill="none" stroke="#52514e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1134.0 391.5 L 1138.0 396.0 L 1146.5 386.5" fill="none" stroke="#52514e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="40.0" y="469.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15.5" fill="#0b0b0b" font-weight="600" text-anchor="start">T5</text>
+<text x="72.0" y="469.0" font-family="'SFMono-Regular', Menlo, Consolas, monospace" font-size="12.5" fill="#898781" font-weight="400" text-anchor="start">seq 53</text>
+<line x1="525.1" y1="464" x2="625.6" y2="464" stroke="#898781" stroke-width="2.0" opacity="0.75"/>
+<circle cx="525.1" cy="464" r="4.6" fill="#fcfcfb" stroke="#898781" stroke-width="2.2" opacity="0.75"/>
+<rect x="621.0" y="459.4" width="9.2" height="9.2" rx="1.6" fill="#898781" opacity="0.75"/>
+<path d="M 854.0 463.5 L 858.0 468.0 L 866.5 458.5" fill="none" stroke="#52514e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 994.0 463.5 L 998.0 468.0 L 1006.5 458.5" fill="none" stroke="#52514e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1134.0 463.5 L 1138.0 468.0 L 1146.5 458.5" fill="none" stroke="#52514e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="168" y1="520" x2="726" y2="520" stroke="#c3c2b7" stroke-width="1.5"/>
+<text x="726.0" y="542.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#898781" font-weight="400" text-anchor="end">time</text>
+<circle cx="174" cy="582" r="4.6" fill="#fcfcfb" stroke="#898781" stroke-width="2.2"/>
+<text x="188.0" y="586.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#52514e" font-weight="400" text-anchor="start">UPDATE runs (updated_at stamped, seq allocated)</text>
+<rect x="520" y="577.4" width="9.2" height="9.2" rx="1.6" fill="#898781"/>
+<text x="540.0" y="586.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#52514e" font-weight="400" text-anchor="start">COMMIT (row becomes visible)</text>
+<path d="M 772.5 576.5 L 783.5 587.5 M 783.5 576.5 L 772.5 587.5" fill="none" stroke="#d03b3b" stroke-width="2.6" stroke-linecap="round"/>
+<text x="794.0" y="586.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#d03b3b" font-weight="600" text-anchor="start">never replayed</text>
+<path d="M 932.0 581.5 L 936.0 586.0 L 944.5 576.5" fill="none" stroke="#52514e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="954.0" y="586.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#52514e" font-weight="400" text-anchor="start">correct</text>
+<text x="40.0" y="640.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#52514e" font-weight="400" text-anchor="start">T1 and T4 committed before W, so the bulk scan already has them. T5 started after W, so all three watermarks replay it.</text>
+<text x="40.0" y="662.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#52514e" font-weight="400" text-anchor="start">T2 and T3 stamped their rows before W and committed after it. The scan's snapshot predates both commits, and updated_at &lt; W excludes them from the replay.</text>
+<text x="40.0" y="684.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#898781" font-weight="400" text-anchor="start">T4 allocated seq 52 and committed first, so MAX(seq) = 52 also excludes seq 50 and 51 - it only works when nothing allocated later commits ahead of you.</text>
+</svg>
