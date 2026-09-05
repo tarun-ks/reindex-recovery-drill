@@ -1,0 +1,299 @@
+{
+  "concurrency": 120,
+  "batch": 64,
+  "write_queue_size": [
+    10
+  ],
+  "rounds_run": 1,
+  "items_rejected": 6541,
+  "items_rejected_per_item": 525,
+  "items_rejected_whole_request": 6016,
+  "http_200_with_errors": 22,
+  "http_429_whole_request": 94,
+  "shards": 8,
+  "error_types": {
+    "es_rejected_execution_exception(429)": 94,
+    "es_rejected_execution_exception": 525
+  },
+  "requests": 120,
+  "items_sent": 7680,
+  "real_rejections_observed": true,
+  "machine": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.6",
+    "logical_cpus": 14,
+    "cpu": "Apple M4 Max",
+    "ram_bytes": 38654705664,
+    "containers": [
+      {
+        "AutoRemove": false,
+        "Command": null,
+        "CreatedAt": "8 seconds ago",
+        "CIDFile": "",
+        "Exited": false,
+        "ExitedAt": -62135596800,
+        "ExitCode": 0,
+        "ExposedPorts": null,
+        "Id": "8e47c9599369e4856411f345697e5bb09ad12d3ed857cbac22e64d70e2843853",
+        "Image": "",
+        "ImageID": "",
+        "IsInfra": true,
+        "Labels": null,
+        "Mounts": [],
+        "Names": [
+          "f690c58161a4-infra"
+        ],
+        "Namespaces": {},
+        "Networks": [
+          "podman"
+        ],
+        "Pid": 90114,
+        "Pod": "f690c58161a4fe5e4466d8e1785f5d294c3c6d3b5c60b3103ef9b3b3ba0aa6d6",
+        "PodName": "drill",
+        "Ports": [
+          {
+            "host_ip": "",
+            "container_port": 5432,
+            "host_port": 5432,
+            "range": 1,
+            "protocol": "tcp"
+          },
+          {
+            "host_ip": "",
+            "container_port": 9200,
+            "host_port": 9200,
+            "range": 1,
+            "protocol": "tcp"
+          }
+        ],
+        "Restarts": 0,
+        "Size": null,
+        "StartedAt": 1788619145,
+        "State": "running",
+        "Status": "Up 9 seconds",
+        "Created": 1788619145
+      },
+      {
+        "AutoRemove": false,
+        "Command": [
+          "-c",
+          "shared_preload_libraries=pg_stat_statements",
+          "-c",
+          "pg_stat_statements.track=all",
+          "-c",
+          "max_connections=200"
+        ],
+        "CreatedAt": "8 seconds ago",
+        "CIDFile": "",
+        "Exited": false,
+        "ExitedAt": -62135596800,
+        "ExitCode": 0,
+        "ExposedPorts": {
+          "5432": [
+            "tcp"
+          ]
+        },
+        "Id": "1e0b67813c4b55382eca512e3ce5b9ae007f5fb3004d36a87d962fca1b11ac65",
+        "Image": "docker.io/library/postgres:16",
+        "ImageID": "43064e70a75c153a0ea5abed66b08e2981b7b43088bd59fb4b9f1a20ae4b62b0",
+        "IsInfra": false,
+        "Labels": null,
+        "Mounts": [
+          "/var/lib/postgresql/data"
+        ],
+        "Names": [
+          "pg"
+        ],
+        "Namespaces": {},
+        "Networks": [],
+        "Pid": 90119,
+        "Pod": "f690c58161a4fe5e4466d8e1785f5d294c3c6d3b5c60b3103ef9b3b3ba0aa6d6",
+        "PodName": "drill",
+        "Ports": [
+          {
+            "host_ip": "",
+            "container_port": 5432,
+            "host_port": 5432,
+            "range": 1,
+            "protocol": "tcp"
+          },
+          {
+            "host_ip": "",
+            "container_port": 9200,
+            "host_port": 9200,
+            "range": 1,
+            "protocol": "tcp"
+          }
+        ],
+        "Restarts": 0,
+        "Size": null,
+        "StartedAt": 1788619145,
+        "State": "running",
+        "Status": "Up 9 seconds",
+        "Created": 1788619145
+      },
+      {
+        "AutoRemove": false,
+        "Command": [
+          "eswrapper"
+        ],
+        "CreatedAt": "8 seconds ago",
+        "CIDFile": "",
+        "Exited": false,
+        "ExitedAt": -62135596800,
+        "ExitCode": 0,
+        "ExposedPorts": {
+          "9200": [
+            "tcp"
+          ],
+          "9300": [
+            "tcp"
+          ]
+        },
+        "Id": "fc31986424b639876660c325e262a5b3acaee21b912163f990b9babaf0d4077b",
+        "Image": "docker.elastic.co/elasticsearch/elasticsearch:8.19.3",
+        "ImageID": "2c8ee1d3190b47530807b7b629decb5d99e7be41239ea012fc2554aa756ef3b9",
+        "IsInfra": false,
+        "Labels": {
+          "org.label-schema.build-date": "2025-08-26T02:35:34.366492370Z",
+          "org.label-schema.license": "Elastic-License-2.0",
+          "org.label-schema.name": "Elasticsearch",
+          "org.label-schema.schema-version": "1.0",
+          "org.label-schema.url": "https://www.elastic.co/products/elasticsearch",
+          "org.label-schema.usage": "https://www.elastic.co/guide/en/elasticsearch/reference/index.html",
+          "org.label-schema.vcs-ref": "1fde05a4d63448377eceb8fd3d51ce16ca3f02a9",
+          "org.label-schema.vcs-url": "https://github.com/elastic/elasticsearch",
+          "org.label-schema.vendor": "Elastic",
+          "org.label-schema.version": "8.19.3",
+          "org.opencontainers.image.created": "2025-08-26T02:35:34.366492370Z",
+          "org.opencontainers.image.documentation": "https://www.elastic.co/guide/en/elasticsearch/reference/index.html",
+          "org.opencontainers.image.licenses": "Elastic-License-2.0",
+          "org.opencontainers.image.ref.name": "ubuntu",
+          "org.opencontainers.image.revision": "1fde05a4d63448377eceb8fd3d51ce16ca3f02a9",
+          "org.opencontainers.image.source": "https://github.com/elastic/elasticsearch",
+          "org.opencontainers.image.title": "Elasticsearch",
+          "org.opencontainers.image.url": "https://www.elastic.co/products/elasticsearch",
+          "org.opencontainers.image.vendor": "Elastic",
+          "org.opencontainers.image.version": "8.19.3"
+        },
+        "Mounts": [],
+        "Names": [
+          "es"
+        ],
+        "Namespaces": {},
+        "Networks": [],
+        "Pid": 90166,
+        "Pod": "f690c58161a4fe5e4466d8e1785f5d294c3c6d3b5c60b3103ef9b3b3ba0aa6d6",
+        "PodName": "drill",
+        "Ports": [
+          {
+            "host_ip": "",
+            "container_port": 5432,
+            "host_port": 5432,
+            "range": 1,
+            "protocol": "tcp"
+          },
+          {
+            "host_ip": "",
+            "container_port": 9200,
+            "host_port": 9200,
+            "range": 1,
+            "protocol": "tcp"
+          }
+        ],
+        "Restarts": 0,
+        "Size": null,
+        "StartedAt": 1788619145,
+        "State": "running",
+        "Status": "Up 9 seconds",
+        "Created": 1788619145
+      },
+      {
+        "AutoRemove": false,
+        "Command": [
+          "eswrapper"
+        ],
+        "CreatedAt": "8 seconds ago",
+        "CIDFile": "",
+        "Exited": false,
+        "ExitedAt": -62135596800,
+        "ExitCode": 0,
+        "ExposedPorts": {
+          "9200": [
+            "tcp"
+          ],
+          "9300": [
+            "tcp"
+          ]
+        },
+        "Id": "256fb7ca05cb7eed1114981c990eda7e6963169f65e17808cde700a4e9ebf298",
+        "Image": "docker.elastic.co/elasticsearch/elasticsearch:8.19.3",
+        "ImageID": "2c8ee1d3190b47530807b7b629decb5d99e7be41239ea012fc2554aa756ef3b9",
+        "IsInfra": false,
+        "Labels": {
+          "org.label-schema.build-date": "2025-08-26T02:35:34.366492370Z",
+          "org.label-schema.license": "Elastic-License-2.0",
+          "org.label-schema.name": "Elasticsearch",
+          "org.label-schema.schema-version": "1.0",
+          "org.label-schema.url": "https://www.elastic.co/products/elasticsearch",
+          "org.label-schema.usage": "https://www.elastic.co/guide/en/elasticsearch/reference/index.html",
+          "org.label-schema.vcs-ref": "1fde05a4d63448377eceb8fd3d51ce16ca3f02a9",
+          "org.label-schema.vcs-url": "https://github.com/elastic/elasticsearch",
+          "org.label-schema.vendor": "Elastic",
+          "org.label-schema.version": "8.19.3",
+          "org.opencontainers.image.created": "2025-08-26T02:35:34.366492370Z",
+          "org.opencontainers.image.documentation": "https://www.elastic.co/guide/en/elasticsearch/reference/index.html",
+          "org.opencontainers.image.licenses": "Elastic-License-2.0",
+          "org.opencontainers.image.ref.name": "ubuntu",
+          "org.opencontainers.image.revision": "1fde05a4d63448377eceb8fd3d51ce16ca3f02a9",
+          "org.opencontainers.image.source": "https://github.com/elastic/elasticsearch",
+          "org.opencontainers.image.title": "Elasticsearch",
+          "org.opencontainers.image.url": "https://www.elastic.co/products/elasticsearch",
+          "org.opencontainers.image.vendor": "Elastic",
+          "org.opencontainers.image.version": "8.19.3"
+        },
+        "Mounts": [],
+        "Names": [
+          "es2"
+        ],
+        "Namespaces": {},
+        "Networks": [],
+        "Pid": 90206,
+        "Pod": "f690c58161a4fe5e4466d8e1785f5d294c3c6d3b5c60b3103ef9b3b3ba0aa6d6",
+        "PodName": "drill",
+        "Ports": [
+          {
+            "host_ip": "",
+            "container_port": 5432,
+            "host_port": 5432,
+            "range": 1,
+            "protocol": "tcp"
+          },
+          {
+            "host_ip": "",
+            "container_port": 9200,
+            "host_port": 9200,
+            "range": 1,
+            "protocol": "tcp"
+          }
+        ],
+        "Restarts": 0,
+        "Size": null,
+        "StartedAt": 1788619145,
+        "State": "running",
+        "Status": "Up 9 seconds",
+        "Created": 1788619145
+      }
+    ],
+    "container_limits": {
+      "pg": {
+        "memory_bytes": 0,
+        "nano_cpus": 0
+      },
+      "es": {
+        "memory_bytes": 0,
+        "nano_cpus": 0
+      }
+    }
+  }
+}
